@@ -66,7 +66,7 @@
       <updated>1594110662097</updated>
       <workItem from="1594110663738" duration="1142000" />
       <workItem from="1594265924890" duration="1356000" />
-      <workItem from="1594289793536" duration="5000" />
+      <workItem from="1594289793536" duration="636000" />
     </task>
     <task id="LOCAL-00001" summary="UPDATE">
       <created>1594266045360</created>
@@ -75,7 +75,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594266045360</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update">
+      <created>1594289822297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594289822297</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,7 +102,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UPDATE" />
-    <option name="LAST_COMMIT_MESSAGE" value="UPDATE" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1594283972210">

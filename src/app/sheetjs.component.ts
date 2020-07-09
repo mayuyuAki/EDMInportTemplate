@@ -59,7 +59,7 @@ export class SheetJSComponent {
 				this.EDMData[i][0] = this.FSMData[i][3];
 				this.EDMData[i][1] = this.FSMData[i][4];
 				this.EDMData[i][2] = this.FSMData[i][5];
-				this.EDMData[i][3] = '';
+				this.EDMData[i][3] = this.FSMData[i][3];
 				this.EDMData[i][4] = this.FSMData[i][5];
 				this.EDMData[i][5] = this.FSMData[i][7];
 				this.EDMData[i][6] = this.FSMData[i][8];
