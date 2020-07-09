@@ -22,7 +22,7 @@ type BOB = any[][];
 
 export class SheetJSComponent {
 	FSMData: AOA = [ [1, 2], [3, 4] ];
-	EDMData: AOA = [ [0, 2], [0, 4] ];
+	EDMData: BOB = [ [0, 2], [0, 4] ];
 	wopts: XLSX.WritingOptions = { bookType: 'xlsx', type: 'array' };
 	fileName: string = 'EDM.xlsx';
 

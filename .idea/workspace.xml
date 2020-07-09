@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea86377c-88bc-4b8f-8f10-472f7ec1fa20" name="Default Changelist" comment="" />
+    <list default="true" id="ea86377c-88bc-4b8f-8f10-472f7ec1fa20" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/app/sheetjs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/sheetjs.component.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,8 +31,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="ts.external.directory.path" value="D:\Software\WebStorm\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
@@ -58,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1594110662097</updated>
       <workItem from="1594110663738" duration="1142000" />
+      <workItem from="1594265924890" duration="92000" />
     </task>
     <servers />
   </component>
@@ -74,6 +81,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="740" y="274" key="FileChooserDialogImpl" timestamp="1594112151805">
