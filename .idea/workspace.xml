@@ -7,7 +7,13 @@
         <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea86377c-88bc-4b8f-8f10-472f7ec1fa20" name="Default Changelist" comment="">
@@ -66,7 +72,8 @@
       <updated>1594110662097</updated>
       <workItem from="1594110663738" duration="1142000" />
       <workItem from="1594265924890" duration="1356000" />
-      <workItem from="1594289793536" duration="636000" />
+      <workItem from="1594289793536" duration="2333000" />
+      <workItem from="1594349556925" duration="2155000" />
     </task>
     <task id="LOCAL-00001" summary="UPDATE">
       <created>1594266045360</created>
@@ -82,18 +89,47 @@
       <option name="project" value="LOCAL" />
       <updated>1594289822297</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <created>1594290781640</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594290781640</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -114,6 +150,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594112158193" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1594291264929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594291264929" />
     <state x="711" y="419" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1594111853229">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

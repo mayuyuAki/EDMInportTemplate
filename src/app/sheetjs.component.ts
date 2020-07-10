@@ -19,7 +19,7 @@ type BOB = any[][];
 
 export class SheetJSComponent {
 	FSMData: AOA = [ [1, 2], [3, 4] ];
-	EDMData: BOB = [ [0, 2], [0, 4] ];
+	EDMData: BOB = [ [0, 2], [] ];
 	wopts: XLSX.WritingOptions = { bookType: 'xlsx', type: 'array' };
 	fileName: string = 'EDM.xlsx';
 
@@ -49,7 +49,7 @@ export class SheetJSComponent {
 		/* generate worksheet */
 		// EDM Excel COLUMN Name
 		//this.EDMData[0] = ["SOLD TO", "BP Role", "客户名称", "Customer English Name", "客户简称", "Search term 2", "Market Segment", "L4 Cust Hier Node", "L4 Cust Hier Name", "Name 2", "Date", "FH Customer", "FH TM Code", "FH TM", "FH ADM", "FH DM", "Standard", "Template", "City", "Postl Code", "TranspZone", "Street", "Street 2", "Rg", "RelCat", "SHIP TO", "BP Role", "Standard", "Name 1", "Search term 1", "门店名称", "Central", "Name 2", "Last name", "First name", "City-发货地址", "Postl Code", "TranspZone", "Street 2", "Rg", "Telephone", "Street - 发货地址", "GT address", "集团代码", "集团名称", "联系人信息", "联系人电话", "TM", "客户市场类型"];
-		this.EDMData[0] = ["SOLD TO","客户名称", "客户简称", "SHIP TO","门店名称","City-发货地址","Street - 发货地址","集团代码", "集团名称", "联系人信息", "联系人电话", "TM", "客户市场类型"];
+		this.EDMData[0] = ["SOLD TO", "BP Role", "客户名称", "Customer English Name", "客户简称", "Search term 2", "Market Segment", "L4 Cust Hier Node", "L4 Cust Hier Name", "Name 2", "Date", "FH Customer", "FH TM Code", "FH TM", "FH ADM", "FH DM", "Standard", "Template", "City", "Postl Code", "TranspZone", "Street", "Street 2", "Rg", "RelCat", "SHIP TO", "BP Role", "Standard", "Name 1", "Search term 1", "门店名称", "Central", "Name 2", "Last name", "First name", "City-发货地址", "Postl Code", "TranspZone", "Street 2", "Rg", "Telephone", "Street - 发货地址", "GT address", "集团代码", "集团名称", "联系人信息", "联系人电话", "TM", "客户市场类型"];
 		for(let i =0;i<this.FSMData.length-2;i++){
 			this.EDMData.push([]);
 		}
@@ -57,22 +57,23 @@ export class SheetJSComponent {
 			//Sold To
 			for(let i =1;i<this.FSMData.length;i++){
 				this.EDMData[i][0] = this.FSMData[i][3];
-				this.EDMData[i][1] = this.FSMData[i][4];
-				this.EDMData[i][2] = this.FSMData[i][5];
-				this.EDMData[i][3] = this.FSMData[i][3];
+				this.EDMData[i][2] = this.FSMData[i][4];
 				this.EDMData[i][4] = this.FSMData[i][5];
-				this.EDMData[i][5] = this.FSMData[i][7];
-				this.EDMData[i][6] = this.FSMData[i][8];
-				this.EDMData[i][7] = this.FSMData[i][9];
-				this.EDMData[i][8] = this.FSMData[i][10];
-				this.EDMData[i][9] = this.FSMData[i][11];
-				this.EDMData[i][10] = this.FSMData[i][12];
+				this.EDMData[i][25] = this.FSMData[i][3];
+				this.EDMData[i][30] = this.FSMData[i][5];
+				this.EDMData[i][35] = this.FSMData[i][7];
+				this.EDMData[i][41] = this.FSMData[i][8];
+				this.EDMData[i][42] = '';
+				this.EDMData[i][43] = this.FSMData[i][9];
+				this.EDMData[i][44] = this.FSMData[i][10];
+				this.EDMData[i][45] = this.FSMData[i][11];
+				this.EDMData[i][46] = this.FSMData[i][12];
 				if(this.FSMData[i][14] && (this.FSMData[i][14] !='')){
-					this.EDMData[i][11] = this.FSMData[i][14];
+					this.EDMData[i][47] = this.FSMData[i][14];
 				}else{
-					this.EDMData[i][11] = this.FSMData[i][13];
+					this.EDMData[i][47] = this.FSMData[i][13];
 				}
-				this.EDMData[i][12] = this.FSMData[i][15];
+				this.EDMData[i][48] = this.FSMData[i][15];
 			}
 			console.log(this.EDMData.length);
 
