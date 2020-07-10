@@ -11,7 +11,7 @@ type BOB = any[][];
 	selector: 'sheetjs',
 	template: `
 		<div>
-			上传FSM文件<input type="file" (change)="onFileChange($event)" multiple="false" />
+			上传FSM文件<input id="chooseFile"  type="file" (change)="onFileChange($event)" multiple="false" />
 		</div>
 		<button (click)="export()">生成EDM导入模板</button>
 	`
@@ -25,8 +25,10 @@ export class SheetJSComponent {
 
 	onFileChange(evt: any) {
 		/* wire up file reader */
-		const target: DataTransfer = <DataTransfer>(evt.target);
-		if (target.files.length !== 1) throw new Error('Cannot use multiple files');
+		const uploadsFile = <HTMLInputElement>document.getElementById('chooseFile');
+		const target = uploadsFile.files[0];
+		//const target: DataTransfer = <DataTransfer>(evt.target);
+		//if (target.files.length !== 1) throw new Error('Cannot use multiple files');
 		const reader: FileReader = new FileReader();
 		reader.onload = (e: any) => {
 			/* read workbook */
@@ -40,7 +42,8 @@ export class SheetJSComponent {
 			/* save data */
 			this.FSMData = <AOA>(XLSX.utils.sheet_to_json(ws, {header: 1}));
 		};
-		reader.readAsBinaryString(target.files[0]);
+		reader.readAsBinaryString(target);
+		//reader.readAsBinaryString(target.files[0]);
 		console.log(this.FSMData);
 
 	}
